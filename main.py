@@ -1,6 +1,10 @@
 import os
 import datetime
 
+def saludar():
+    nombre = input("\n¿Cuál es tu nombre?: ")
+    print(f"\n¡Hola, {nombre}! Esta es la función de saludo.\n")
+
 def mostrar_menu():
   print("\nMenu de opciones: ")
   print("1. Saludar")
@@ -10,11 +14,11 @@ def mostrar_menu():
 def main():
   while True:
     mostrar_menu()
-    opcion = input("Seleccione una opcion: ")
+    opcion = input("\nSeleccione una opcion: ")
 
     match opcion:
       case "1":
-        print("Funcion de saludar")
+        saludar()
       case "2":
         print("Funcion de Mostrar fecha")
       case "3":
